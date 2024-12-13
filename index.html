@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./assets/style/main.css">
+	<title>Document</title>
+</head>
+
+<body>
+	<main class="main-page">
+		<header class="header">
+			<div class="header__inner container">
+				<a href="#" class="header__link">
+					<img src="./assets/img/logo_svg.svg" alt="logo" class="header__logo">
+				</a>
+				<p class="header__text">
+					юридическая компания
+					<br /> по возврату средств
+				</p>
+			</div>
+		</header>
+		<section class="hero">
+			<div class="hero__inner container">
+				<div class="hero__info">
+					<h1 class="hero__title">Эффективное решение юридических вопросов</h1>
+					<p class="hero__text">Наша компания выделяется в сфере возврата средств и разработки деловой документации</p>
+				</div>
+				<div class="hero__box">
+					<a href="#" class="hero__link link-help">Мне нужна помощьㅤ→</a>
+					<a href="#" class="hero__link link-more">Подробнее</a>
+				</div>
+			</div>
+		</section>
+		<section class="request">
+			<div class="request__inner container">
+				<div class="request__title">Заявка на бесплатную консультацию</div>
+
+				<div class="request__form">
+					<input type="name" placeholder="Ваше имя" class="request__input">
+					<input type="surname" placeholder="Ваша фамилия" class="request__input">
+					<input type="mail" placeholder="Ваш email" class="request__input">
+
+					<div class="request__phone">
+						<input type="tel" class="request__phone-input" placeholder="88888888">
+						<div class="request__dropdown">
+							<div class="request__dropdown-btn" id="country-select">
+								<img
+									src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAOklEQVR4nGNgGHDgV7X1PyWYAUR0b/9AFh5OBvhREohfD5X9//9uMVkYpJdh1ID/4DCgBA90VmRgAAARzWHJlHTMggAAAABJRU5ErkJggg=="
+									alt="ukraine">
+								<span>+380</span>
+							</div>
+							<ul class="request__dropdown-list">
+								<li class="request__dropdown-item" data-country-code="ua" data-dial-code="+380">
+									<img
+										src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAOklEQVR4nGNgGHDgV7X1PyWYAUR0b/9AFh5OBvhREohfD5X9//9uMVkYpJdh1ID/4DCgBA90VmRgAAARzWHJlHTMggAAAABJRU5ErkJggg=="
+										alt="ukraine"> Ukraine (+380)
+								</li>
+								<li class="request__dropdown-item" data-country-code="us" data-dial-code="+1">
+									<img
+										src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAApklEQVR4nGNgGHBw3Nn5PzJevP0MXoyungFEfO/vB2MQ+9Ov/3gxunoGmhnw/vWH/4937vn/eMduMJtkA54fP/3/hIsLGIPYJBnw7MiJ/2fj4v9fiIwE43Px8f+fHj5OvAE3+yaAbb4SFfX/SmTk/xOurmAxog14fubC/7MRkf/PBwf/Px8UBGaDxEgKgxcXr/6/1tYBxi8vXRuAaPxEigEUJeUBBwA0AkoDvgnpYwAAAABJRU5ErkJggg=="
+										alt="canada">UK (+44)
+								</li>
+								<li class="request__dropdown-item" data-country-code="gb" data-dial-code="+44">
+									<img
+										src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAASklEQVR4nGNgGHBg5uD7nxLMACK8U8rJwtQzwIwSLxx3dv7/vb+fLAzSyzA4DDhOAWb4eqjs//93i8nCIL0Mg8OArxTggc6KDAwA2ZUKgYeruOcAAAAASUVORK5CYII="
+										alt="germany"> UK (+44)
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="request__select">
+						<div class="request__select-label">Сумма потери</div>
+						<div class="request__select-header">
+							<span class="request__select-current">0$ - 500$</span>
+							<svg class="request__select-icon" width="10" height="6" viewBox="0 0 10 6">
+								<path d="M1 1L5 5L9 1" stroke="currentColor" fill="none" />
+							</svg>
+						</div>
+						<ul class="request__select-list">
+							<li class="request__select-item" data-value="0-500">0$ - 500$</li>
+							<li class="request__select-item" data-value="500-1000">500$ - 1,000$</li>
+							<li class="request__select-item" data-value="1000-5000">1,000$ - 5,000$</li>
+							<li class="request__select-item" data-value="5000-10000">5,000$ - 10,000$</li>
+							<li class="request__select-item" data-value="10000+">Более 10,000$</li>
+						</ul>
+					</div>
+					<a href="#" class="request__link">Отправить</a>
+				</div>
+
+
+
+			</div>
+		</section>
+		<section class="stats">
+			<div class="stats__inner container">
+				<div class="stats__item">
+					<p class="stats__title">Более 10</p>
+					<p class="stats__text">лет экспертизы на рынке</p>
+				</div>
+				<div class="stats__item">
+					<p class="stats__title">376964</p>
+					<p class="stats__text">успешных дел</p>
+				</div>
+				<div class="stats__item">
+					<p class="stats__title">$18 млн</p>
+					<p class="stats__text">возвращенных денег</p>
+				</div>
+				<div class="stats__item">
+					<p class="stats__title">8 дней</p>
+					<p class="stats__text">средний срок возврата</p>
+				</div>
+			</div>
+		</section>
+		<section class="questions">
+			<div class="questions__inner container">
+				<div class="questions__wrapper">
+					<h2 class="questions__title">Не оставляйте свои финансовые вопросы без внимания</h2>
+					<p class="questions__text">Заполните форму заявки ниже, и наши специалисты свяжутся с вами в кратчайшие сроки.
+						Вместе мы сделаем первый шаг к восстановлению справедливости!</p>
+					<a href="#" class="questions__link">Обратиться к экспертам →</a>
+				</div>
+			</div>
+		</section>
+		<footer class="footer">
+			<div class="footer__inner">
+				<div class="footer__top container">
+					<p class="footer__info">Обратившись в "Юрист Консул", вы можете быть уверены, что ваш случай находится в
+						надежных руках. Мы стремимся помочь нашим клиентам достичь справедливости и вернуть утраченные средства. С
+						нами вы не одиноки в борьбе за ваши права как инвестора.</p>
+				</div>
+				<div class="footer__wrapper container">
+					<div class="footer__box">
+						<a href="#" class="footer__link">
+							<img src="./assets/img/logo_svg_white.svg" alt="logo" class="footer__logo">
+						</a>
+						<p class="footer__text">
+							юридическая компания
+							<br /> по возврату средств
+						</p>
+					</div>
+					<div class="footer__dow">
+						<a href="#" class="footer__btn">
+							<img src="./assets/img/2.png" alt=""></a>
+						<a href="#" class="footer__btn">
+							<img src="./assets/img/1.png" alt=""></a>
+					</div>
+					<p class="footer__cop">
+						© 2024 JCONSUL LTD. All rights reserved. Any copying of the site materials is strictly prohibited.
+					</p>
+				</div>
+			</div>
+
+		</footer>
+	</main>
+	<script src="./assets/js/index.js"></script>
+</body>
+
+</html>
